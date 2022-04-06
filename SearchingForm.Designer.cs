@@ -36,6 +36,7 @@
             this.LabelSearchTarget = new System.Windows.Forms.Label();
             this.ButtonLinearSeach = new System.Windows.Forms.Button();
             this.ButtonTernarySearch = new System.Windows.Forms.Button();
+            this.textBoxFeedback = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // ListViewColours
@@ -44,6 +45,7 @@
             this.Colour});
             this.ListViewColours.HideSelection = false;
             this.ListViewColours.Location = new System.Drawing.Point(12, 12);
+            this.ListViewColours.MultiSelect = false;
             this.ListViewColours.Name = "ListViewColours";
             this.ListViewColours.Size = new System.Drawing.Size(121, 290);
             this.ListViewColours.TabIndex = 0;
@@ -111,11 +113,19 @@
             this.ButtonTernarySearch.UseVisualStyleBackColor = true;
             this.ButtonTernarySearch.Click += new System.EventHandler(this.ButtonTernarySearch_Click);
             // 
+            // textBoxFeedback
+            // 
+            this.textBoxFeedback.Location = new System.Drawing.Point(12, 308);
+            this.textBoxFeedback.Name = "textBoxFeedback";
+            this.textBoxFeedback.Size = new System.Drawing.Size(276, 20);
+            this.textBoxFeedback.TabIndex = 7;
+            // 
             // SearchingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 337);
+            this.Controls.Add(this.textBoxFeedback);
             this.Controls.Add(this.ButtonTernarySearch);
             this.Controls.Add(this.ButtonLinearSeach);
             this.Controls.Add(this.LabelSearchTarget);
@@ -140,6 +150,7 @@
         private System.Windows.Forms.Label LabelSearchTarget;
         private System.Windows.Forms.Button ButtonLinearSeach;
         private System.Windows.Forms.Button ButtonTernarySearch;
+        private System.Windows.Forms.TextBox textBoxFeedback;
     }
 }
 

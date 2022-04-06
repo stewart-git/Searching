@@ -8,3 +8,14 @@ C:\Users\6000707\source\repos\Searching\obj\Debug\Searching.csproj.GenerateResou
 C:\Users\6000707\source\repos\Searching\obj\Debug\Searching.csproj.CoreCompileInputs.cache
 C:\Users\6000707\source\repos\Searching\obj\Debug\Searching.exe
 C:\Users\6000707\source\repos\Searching\obj\Debug\Searching.pdb
+C:\Users\godwis\Source\Repos\stewart-git\bin\Debug\Searching.exe.config
+C:\Users\godwis\Source\Repos\stewart-git\bin\Debug\Searching.exe
+C:\Users\godwis\Source\Repos\stewart-git\bin\Debug\Searching.pdb
+C:\Users\godwis\Source\Repos\stewart-git\obj\Debug\Searching.csproj.AssemblyReference.cache
+C:\Users\godwis\Source\Repos\stewart-git\obj\Debug\Searching.csproj.SuggestedBindingRedirects.cache
+C:\Users\godwis\Source\Repos\stewart-git\obj\Debug\Searching.SearchingForm.resources
+C:\Users\godwis\Source\Repos\stewart-git\obj\Debug\Searching.Properties.Resources.resources
+C:\Users\godwis\Source\Repos\stewart-git\obj\Debug\Searching.csproj.GenerateResource.cache
+C:\Users\godwis\Source\Repos\stewart-git\obj\Debug\Searching.csproj.CoreCompileInputs.cache
+C:\Users\godwis\Source\Repos\stewart-git\obj\Debug\Searching.exe
+C:\Users\godwis\Source\Repos\stewart-git\obj\Debug\Searching.pdb

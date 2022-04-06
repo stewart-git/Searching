@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+// Stewart Godwin, 
+// Updated 06/04/2022
 namespace Searching
 {
     public partial class SearchingForm : Form
@@ -17,9 +18,10 @@ namespace Searching
             InitializeComponent();
             DisplayRainbow();
         }
+        // Create an Array of Strings with SORTED data
         string[] Rainbow = new string[] {"Amber","Blue","Crimson","Ebony","Green","Indego",
-            "Lavender","Maroon","Orange","Purle","Red","Violet","Yellow"};
-        // Display the array of string vlaues
+            "Lavender","Maroon","Orange","Purple","Red","Violet","Yellow"};
+        // Display the array of string values
         private void DisplayRainbow()
         {
             ListViewColours.Items.Clear();
@@ -30,13 +32,20 @@ namespace Searching
                 ListViewColours.Items.Add(lvi);
             }
         }
-        // Binary Search. In this procedure, the entire list is divided into two sub-lists. 
+        private void DisplayItem(int colourIndx)
+        {
+            ListViewColours.Refresh();  
+            ListViewColours.Items[colourIndx].Selected = true;           
+            ListViewColours.Select();
+        }
+        // Binary Search. In this method, the entire list is divided into two sub-lists. 
         // If the item is found in the middle position, it returns the location, otherwise 
-        // jumps to either left or right sub-list and do the same process again until finding 
+        // jump to either left or right sub-list and do the same process again until finding 
         // the item or exceed the range.
         private void ButonBinarySearch_Click(object sender, EventArgs e)
         {
-            if(!string.IsNullOrEmpty(TextBoxTarget.Text))
+            textBoxFeedback.Clear();
+            if (!string.IsNullOrEmpty(TextBoxTarget.Text))
             {
                 bool found = false; // assume the item has not been found
                 int min = 0;              
@@ -48,6 +57,7 @@ namespace Searching
                     if(findThis.CompareTo(Rainbow[mid]) == 0)
                     {
                         found = true;
+                        DisplayItem(mid);
                         break;
                     }
                     else if(findThis.CompareTo(Rainbow[mid]) < 0)
@@ -58,7 +68,6 @@ namespace Searching
                     {
                         min = mid + 1;
                     }
-
                 }
                 if(!found)
                 {
@@ -66,7 +75,8 @@ namespace Searching
                 }
                 else
                 {
-                    MessageBox.Show("Success: the item was found");
+                    textBoxFeedback.Text = "Success: the item was found";
+                    //MessageBox.Show("Success: the item was found");
                 }
             }
             else
@@ -83,6 +93,7 @@ namespace Searching
         // and binary search according to its performance.
         private void ButtonJumpSearch_Click(object sender, EventArgs e) 
         {
+            textBoxFeedback.Clear();
             bool found = false; // assume the item has not been found
             string target = TextBoxTarget.Text;
             int max = Rainbow.Length;
@@ -115,13 +126,17 @@ namespace Searching
             }
             else
             {
-                MessageBox.Show("Success: the item was found");
+                textBoxFeedback.Text = "Success: the item was found";
+                // MessageBox.Show("Success: the item was found");
             }
             TextBoxTarget.Clear();
         }
-        // linear Search
+        // In computer science, a linear search or sequential search is a method for finding
+        // an element within a list. It sequentially checks each element of the list until
+        // a match is found or the whole list has been searched.
         private void ButtonLinearSeach_Click(object sender, EventArgs e)
         {
+            textBoxFeedback.Clear();
             bool found = false; // assume the item has not been found
             string target = TextBoxTarget.Text;
             // linear Search code
@@ -139,13 +154,19 @@ namespace Searching
             }
             else
             {
-                MessageBox.Show("Success: the item was found");
+                textBoxFeedback.Text = "Success: the item was found";
+                // MessageBox.Show("Success: the item was found");
             }
             TextBoxTarget.Clear();
         }
-        // 
+        // Ternary search is a decrease(by constant) and conquer algorithm that can be used to find
+        // an element in an array. It is similar to binary search where we divide the array into
+        // two parts but in this algorithm, we divide the given array into three parts and determine
+        // which has the key (searched element). We can divide the array into three parts by
+        // taking mid1 and mid2
         private void ButtonTernarySearch_Click(object sender, EventArgs e)
         {
+            textBoxFeedback.Clear();
             bool found = false; // assume the item has not been found
             string target = TextBoxTarget.Text;
             int lo = 0;
@@ -187,7 +208,8 @@ namespace Searching
             }
             else
             {
-                MessageBox.Show("Success: the item was found");
+                textBoxFeedback.Text = "Success: the item was found";
+                // MessageBox.Show("Success: the item was found");
             }
             TextBoxTarget.Clear();
         }
