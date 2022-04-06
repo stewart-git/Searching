@@ -1,0 +1,10 @@
+C:\Users\6000707\source\repos\Searching\bin\Debug\Searching.exe.config
+C:\Users\6000707\source\repos\Searching\bin\Debug\Searching.exe
+C:\Users\6000707\source\repos\Searching\bin\Debug\Searching.pdb
+C:\Users\6000707\source\repos\Searching\obj\Debug\Searching.csprojAssemblyReference.cache
+C:\Users\6000707\source\repos\Searching\obj\Debug\Searching.SearchingForm.resources
+C:\Users\6000707\source\repos\Searching\obj\Debug\Searching.Properties.Resources.resources
+C:\Users\6000707\source\repos\Searching\obj\Debug\Searching.csproj.GenerateResource.cache
+C:\Users\6000707\source\repos\Searching\obj\Debug\Searching.csproj.CoreCompileInputs.cache
+C:\Users\6000707\source\repos\Searching\obj\Debug\Searching.exe
+C:\Users\6000707\source\repos\Searching\obj\Debug\Searching.pdb
